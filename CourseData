@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class CourseData {
+    public static String name;
+    public static String code;
+    public static  String prefix;
+    public static int note;
+    public static String teacher;
+
+    public CourseData(String name, String code, String prefix, int note, String teacher){
+        this.name = name;
+        this.code = code;
+        this.prefix = prefix;
+        this.note = note;
+        this.teacher = teacher;
+    }
+
+    public static void addTeacher(String name) {
+        if (name.equalsIgnoreCase("Cəbiş")) {
+            Teacher teacher1 = new Teacher("Cəbiş", "0502111133", "Fizika");
+            System.out.println("Müəllimin adı: " + teacher1.name + "\nMüəllimin nömrəsi: " + teacher1.phoneNumber + "\nMüəllimin branşı: " + teacher1.branch);
+        }else if (name.equalsIgnoreCase("Faiq")){
+            Teacher teacher2 = new Teacher("Faiq", "0558455445", "Tarix");
+            System.out.println("Müəllimin adı: " + teacher2.name + "\nMüəllimin nömrəsi: " + teacher2.phoneNumber + "\nMüəllimin branşı: " + teacher2.branch);        }
+    }
+
+    public static void printTeacher(String teacherName){
+        if (teacherName.equalsIgnoreCase("Cəbiş")) {
+            Teacher teacher1 = new Teacher("Cəbiş", "0502111133", "Fizika");
+            System.out.println("Müəllimin adı: " + teacher1.name + "\nMüəllimin nömrəsi: " + teacher1.phoneNumber + "\nMüəllimin branşı: " + teacher1.branch);
+        }else if (teacherName.equalsIgnoreCase("Faiq")){
+            Teacher teacher2 = new Teacher("Faiq", "0558455445", "Trix");
+            System.out.println("Müəllimin adı: " + teacher2.name + "\nMüəllimin nömrəsi: " + teacher2.phoneNumber + "\nMüəllimin branşı: " + teacher2.branch);
+        }
+    }
+
+}

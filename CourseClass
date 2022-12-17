@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class CourseClass {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Müəllimin adını daxil edin");
+        String teacherName = sc.next();
+        CourseData.printTeacher(teacherName);
+        System.out.println("Hansi müəllim haqqında məlumatları əlavə etmək istəyirsiniz? ");
+        String techerNameToAdd = sc.next();
+        CourseData.addTeacher(techerNameToAdd);
+    }
+}
